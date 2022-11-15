@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+  <head>
+    <meta charset="utf-8" />
+    <title>Mix Video</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+    />
+    <!--google-fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="../assest/css/swiper-bundle.css" />
+    <link
+      rel="shortcut icon"
+      href="../assest/image/logo.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="../assest/css/normalize.css" />
+    <link rel="stylesheet" href="../assest/css/all.css" />
+    <link rel="stylesheet" href="../assest/css/keen.css" />
+    <link rel="stylesheet" href="../assest/css/ineer-page-style.css" />
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <!-- Demo styles -->
+  </head>
+
+  <body>
+    <!--arrow-->
+    <span class="arrwo"
+      ><i>
+        <script src="https://cdn.lordicon.com/xdjxvujz.js"></script>
+        <lord-icon
+          src="https://cdn.lordicon.com/ribwzplp.json"
+          trigger="loop"
+          stroke="100"
+          style="width: 70px; height: 70px"
+          colors="primary:#ffffff"
+        >
+        </lord-icon> </i
+    ></span>
+
+    <!------------- end of arrow -------------->
+    <!--landing-section-->
+    <section class="landing">
+      <div class="header">
+        <div class="container">
+          <!--header right section-->
+          <div class="right">
+            <a href="../index.html"><img src="../assest/image/logo.png" /></a>
+            <span class=""><a href="../movie/movie.html">الأفلام</a></span>
+            <span class=""><a href="../series/series.html">المسلسلات</a></span>
+            <span class=""><a href="../anime/anime.html">الأنمي</a></span>
+            <span class=""><a href="../manga/manga.html">المانجا</a></span>
+            <span class="active-menu"
+              ><a href="../news/news.html">الأخبار</a></span
+            >
+          </div>
+          <!--header left section-->
+          <div class="left">
+            <span>login</span>
+            <span onclick="search()"
+              ><i class="fa-solid fa-magnifying-glass"></i
+            ></span>
+          </div>
+        </div>
+        <div class="mob-nav">
+          <span class="icon" onclick="myFunc()"><i class="fa-solid fa-bars"></i></span>
+          <div id="hide" class="hide1">
+            <span class=""><a href="../movie/movie.html">الأفلام</a></span>
+            <span class=""><a href="../series/series.html">المسلسلات</a></span>
+            <span class=""><a href="../anime/anime.html">الأنمي</a></span>
+            <span class=""><a href="../manga/manga.html">المانجا</a></span>
+            <span class="active-mob-menu"><a href="../news/news.html">الأخبار</a></span>
+          </div>
+          <a href="../index.html"> <img src="../assest/image/logo.png" /></a>
+          <span onclick="search()" class="icon"
+            ><i class="fa-solid fa-magnifying-glass"></i
+          ></span>
+        </div>
+        <form class="search-box" method="get">
+          	<label for="search"></label>
+          <input
+            id="search"
+            type="search"
+            class="input-search1"
+            placeholder="Type to Search..."
+            autocomplete="off"
+          />
+        </form>
+      </div>
+    </section>
+    <!--new-section-->
+    <section class="content">
+      <div class="grid-father">
+        <div class="grid-content">
+          <sapn class="grid-text">آخر أخبار الأنمي</sapn>
+        </div>
+        <!--content-->
+        <div class="news">
+          <div class="news-h">
+            <span>Hunter x Hunter</span>
+          </div>
+          <div class="news-content">
+            <div class="news-img">
+              <img src="../assest/image/Solo Leveling.jpeg" alt="" srcset="" />
+            </div>
+            <div class="news-p">
+              العظمة , المجد , الذهب , مزايا اشتملت عليها حياة ملك القراصنة غولد
+              روجر الذي حكم عليه بالإعدام لأسباب مجهولة, و ارتأى أن يشي بسر كنزه
+              المعروف بـ ” ون بيس” و المخبأ في مكان ما على الخط الكبير قبل أن
+              ينفذ فيه حكم الإعدام. و بعد اثنين و عشرين سنة من هذه الحادثة تبدأ
+              أحداث قصتنا , و يظهر بطلنا القرصان مونكي دي لوفي الحالم بالعثور
+              على الكنز و الطامع بلقب ملك القراصنة , و من أجل ذلك , يقوم بتناول
+              فاكهة الشيطان للحصول على القوة اللازمة و قبل البدء بأي شيء , عليه
+              أولاً أن يجد الطاقم المناسب ليبدؤون رحلة البحث عن الكنز الأسطوري
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+ <!--folder-->
+    <span class="folder"
+      ><i
+        ><script src="https://cdn.lordicon.com/libs/mssddfmo/lord-icon-2.1.0.js"></script>
+        <lord-icon
+          src="https://cdn.lordicon.com/rjzlnunf.json"
+          trigger="loop"
+          colors="primary:#FFFFFF,secondary:#ff0088"
+          style="width: 50px; height: 50px"
+        >
+        </lord-icon></i
+    ></span>
+    <div class="overlay">
+      <span class="exit"><i class="fa-regular fa-circle-xmark fa-xl"></i></span>
+      <div class="loved-video"></div>
+    </div>
+    <!-- end of folder-->
+    <footer class="copy-right">
+      <span
+        >All Copy Right For <span class="mix">Mix</span>
+        <span class="video">video</span>
+      </span>
+    </footer>
+    <!-- Swiper JS -->
+    <script src="../assest/js/swiper-bundle.js"></script>
+    <script src="../assest/js/all.js"></script>
+    <script src="../assest/js/keen.js"></script>
+    <script src="../assest/js/main.js"></script>
+  </body>
+</html>

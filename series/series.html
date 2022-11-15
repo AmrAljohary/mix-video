@@ -1,0 +1,2850 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+  <head>
+    <meta charset="utf-8" />
+    <title>Mix Video</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+    />
+    <!--google-fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="../assest/css/swiper-bundle.css" />
+    <link
+      rel="shortcut icon"
+      href="../assest/image/logo.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="../assest/css/normalize.css" />
+    <link rel="stylesheet" href="../assest/css/all.css" />
+    <link rel="stylesheet" href="../assest/css/keen.css" />
+    <link rel="stylesheet" href="../assest/css/ineer-page-style.css" />
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <!-- Demo styles -->
+  </head>
+
+  <body>
+    <div class="menu1">
+      <span id="close"><i class="fa-regular fa-circle-xmark fa-lg"></i></span>
+      <span class="menu-span">تمت مشاهدته</span>
+      <span class="menu-span">في الانتظار</span>
+      <span class="menu-span">المفضلة</span>
+      <span class="menu-span">أشاهده حاليا</span>
+    </div>
+    <!--arrow-->
+    <span class="arrwo"
+      ><i>
+        <script src="https://cdn.lordicon.com/xdjxvujz.js"></script>
+        <lord-icon
+          src="https://cdn.lordicon.com/ribwzplp.json"
+          trigger="loop"
+          stroke="100"
+          style="width: 70px; height: 70px"
+          colors="primary:#ffffff"
+        >
+        </lord-icon> </i
+    ></span>
+
+    <!------------- end of arrow -------------->
+    <!--landing-section-->
+    <section class="landing">
+      <div class="header">
+        <div class="container">
+          <!--header right section-->
+          <div class="right">
+            <a href="../index.html"><img src="../assest/image/logo.png" /></a>
+            <span class=""><a href="../movie/movie.html">الأفلام</a></span>
+            <span class="active-menu"
+              ><a href="../series/series.html">المسلسلات</a></span
+            >
+            <span class=""><a href="../anime/anime.html">الأنمي</a></span>
+            <span class=""><a href="../manga/manga.html">المانجا</a></span>
+            <span class=""><a href="../news/news.html">الأخبار</a></span>
+          </div>
+          <!--header left section-->
+          <div class="left">
+            <span>login</span>
+            <span onclick="search()"
+              ><i class="fa-solid fa-magnifying-glass"></i
+            ></span>
+          </div>
+        </div>
+        <div class="mob-nav">
+          <span class="icon" onclick="myFunc()"
+            ><i class="fa-solid fa-bars"></i
+          ></span>
+          <div id="hide" class="hide1">
+            <span class=""><a href="../movie/movie.html">الأفلام</a></span>
+            <span class="active-mob-menu"
+              ><a href="../series/series.html">المسلسلات</a></span
+            >
+            <span class=""><a href="../anime/anime.html">الأنمي</a></span>
+            <span class=""><a href="../manga/manga.html">المانجا</a></span>
+            <span class=""><a href="../news/news.html">الأخبار</a></span>
+          </div>
+          <a href="../index.html"> <img src="../assest/image/logo.png" /></a>
+          <span onclick="search()" class="icon"
+            ><i class="fa-solid fa-magnifying-glass"></i
+          ></span>
+        </div>
+        <form class="search-box" method="get">
+          <label for="search"></label>
+          <input
+            id="search"
+            type="search"
+            class="input-search1"
+            placeholder="Type to Search..."
+            autocomplete="off"
+          />
+        </form>
+      </div>
+      <!--start of content-->
+      <div class="catagory">
+        <div class="cat-name">
+          <span>أقسام المسلسلات</span>
+        </div>
+        <div class="cat-parent" id="cat-btn">
+          <a href="#arabic"><span class="cat1 cat">عربي</span></a>
+          <a href="#forging"><span class="cat2 cat">أجنبي</span></a>
+          <a href="#asian"><span class="cat3 cat"> آسيوي</span></a>
+          <a href="#turkish"> <span class="cat4 cat"> تركي </span></a>
+          <a href="#hindi"><span class="cat5 cat"> هندي</span></a>
+          <a href="#program"><span class="cat6 cat"> برامج</span></a>
+          <a href="#show"><span class="cat7 cat"> مسرحيات</span></a>
+        </div>
+      </div>
+    </section>
+    <!--new-section-->
+    <section class="content">
+      <div class="grid-father">
+        <div class="grid-content">
+          <sapn class="grid-text">مسلسلات مضافة حديثا</sapn>
+        </div>
+        <!--slider-->
+        <div id="my-keen-slider" class="keen-slider">
+          <!--grid start-->
+          <div class="keen-slider__slide number-slide1">
+            <div class="episode">
+              <div class="episode-img">
+                <img src="../assest\image\Venom.jpeg" alt="" srcset="" />
+              </div>
+              <div class="episode-content"></div>
+
+              <div class="right-control">
+                <span class="add-to"><i class="fa-solid fa-plus"></i></span>
+                <span class="love"><i class="fa-solid fa-heart"></i></span>
+              </div>
+              <div class="left-control">
+                <span class="res">FHD+</span>
+                <span class="year">2020</span>
+              </div>
+
+              <div class="bottom-r-control">
+                <span class="season-con">الموسم</span>
+                <span class="season-n">1</span>
+              </div>
+              <div class="bottom-l-control">
+                <span class="episode-con">الحلقة</span>
+                <span class="episode-n">15</span>
+              </div>
+              <span class="episode-name">Venom</span>
+            </div>
+          </div>
+          <!--grid end-->
+          <!--grid start-->
+          <div class="keen-slider__slide number-slide2">
+            <div class="episode">
+              <div class="episode-img">
+                <img src="../assest\image\Venom.jpeg" alt="" srcset="" />
+              </div>
+              <div class="episode-content"></div>
+
+              <div class="right-control">
+                <span class="add-to"><i class="fa-solid fa-plus"></i></span>
+                <span class="love"><i class="fa-solid fa-heart"></i></span>
+              </div>
+              <div class="left-control">
+                <span class="res">FHD+</span>
+                <span class="year">2020</span>
+              </div>
+
+              <div class="bottom-r-control">
+                <span class="season-con">الموسم</span>
+                <span class="season-n">1</span>
+              </div>
+              <div class="bottom-l-control">
+                <span class="episode-con">الحلقة</span>
+                <span class="episode-n">15</span>
+              </div>
+              <span class="episode-name">Venom</span>
+            </div>
+          </div>
+          <!--grid end-->
+          <!--grid start-->
+          <div class="keen-slider__slide number-slide3">
+            <div class="episode">
+              <div class="episode-img">
+                <img src="../assest\image\Venom.jpeg" alt="" srcset="" />
+              </div>
+              <div class="episode-content"></div>
+
+              <div class="right-control">
+                <span class="add-to"><i class="fa-solid fa-plus"></i></span>
+                <span class="love"><i class="fa-solid fa-heart"></i></span>
+              </div>
+              <div class="left-control">
+                <span class="res">FHD+</span>
+                <span class="year">2020</span>
+              </div>
+
+              <div class="bottom-r-control">
+                <span class="season-con">الموسم</span>
+                <span class="season-n">1</span>
+              </div>
+              <div class="bottom-l-control">
+                <span class="episode-con">الحلقة</span>
+                <span class="episode-n">15</span>
+              </div>
+              <span class="episode-name">Venom</span>
+            </div>
+          </div>
+          <!--grid end-->
+          <!--grid start-->
+          <div class="keen-slider__slide number-slide4">
+            <div class="episode">
+              <div class="episode-img">
+                <img src="../assest\image\Venom.jpeg" alt="" srcset="" />
+              </div>
+              <div class="episode-content"></div>
+
+              <div class="right-control">
+                <span class="add-to"><i class="fa-solid fa-plus"></i></span>
+                <span class="love"><i class="fa-solid fa-heart"></i></span>
+              </div>
+              <div class="left-control">
+                <span class="res">FHD+</span>
+                <span class="year">2020</span>
+              </div>
+
+              <div class="bottom-r-control">
+                <span class="season-con">الموسم</span>
+                <span class="season-n">1</span>
+              </div>
+              <div class="bottom-l-control">
+                <span class="episode-con">الحلقة</span>
+                <span class="episode-n">15</span>
+              </div>
+              <span class="episode-name">Venom</span>
+            </div>
+          </div>
+          <!--grid end-->
+          <!--grid start-->
+          <div class="keen-slider__slide number-slide5">
+            <div class="episode">
+              <div class="episode-img">
+                <img src="../assest\image\Venom.jpeg" alt="" srcset="" />
+              </div>
+              <div class="episode-content"></div>
+
+              <div class="right-control">
+                <span class="add-to"><i class="fa-solid fa-plus"></i></span>
+                <span class="love"><i class="fa-solid fa-heart"></i></span>
+              </div>
+              <div class="left-control">
+                <span class="res">FHD+</span>
+                <span class="year">2020</span>
+              </div>
+
+              <div class="bottom-r-control">
+                <span class="season-con">الموسم</span>
+                <span class="season-n">1</span>
+              </div>
+              <div class="bottom-l-control">
+                <span class="episode-con">الحلقة</span>
+                <span class="episode-n">15</span>
+              </div>
+              <span class="episode-name">Venom</span>
+            </div>
+          </div>
+          <!--grid end-->
+          <!--grid start-->
+          <div class="keen-slider__slide number-slide6">
+            <div class="episode">
+              <div class="episode-img">
+                <img src="../assest\image\Venom.jpeg" alt="" srcset="" />
+              </div>
+              <div class="episode-content"></div>
+
+              <div class="right-control">
+                <span class="add-to"><i class="fa-solid fa-plus"></i></span>
+                <span class="love"><i class="fa-solid fa-heart"></i></span>
+              </div>
+              <div class="left-control">
+                <span class="res">FHD+</span>
+                <span class="year">2020</span>
+              </div>
+
+              <div class="bottom-r-control">
+                <span class="season-con">الموسم</span>
+                <span class="season-n">1</span>
+              </div>
+              <div class="bottom-l-control">
+                <span class="episode-con">الحلقة</span>
+                <span class="episode-n">15</span>
+              </div>
+              <span class="episode-name">Venom</span>
+            </div>
+          </div>
+          <!--grid end-->
+          <!--grid start-->
+          <div class="keen-slider__slide number-slide7">
+            <div class="episode">
+              <div class="episode-img">
+                <img src="../assest\image\Venom.jpeg" alt="" srcset="" />
+              </div>
+              <div class="episode-content"></div>
+
+              <div class="right-control">
+                <span class="add-to"><i class="fa-solid fa-plus"></i></span>
+                <span class="love"><i class="fa-solid fa-heart"></i></span>
+              </div>
+              <div class="left-control">
+                <span class="res">FHD+</span>
+                <span class="year">2020</span>
+              </div>
+
+              <div class="bottom-r-control">
+                <span class="season-con">الموسم</span>
+                <span class="season-n">1</span>
+              </div>
+              <div class="bottom-l-control">
+                <span class="episode-con">الحلقة</span>
+                <span class="episode-n">15</span>
+              </div>
+              <span class="episode-name">Venom</span>
+            </div>
+          </div>
+          <!--grid end-->
+          <!--grid start-->
+          <div class="keen-slider__slide number-slide8">
+            <div class="episode">
+              <div class="episode-img">
+                <img src="../assest\image\Venom.jpeg" alt="" srcset="" />
+              </div>
+              <div class="episode-content"></div>
+
+              <div class="right-control">
+                <span class="add-to"><i class="fa-solid fa-plus"></i></span>
+                <span class="love"><i class="fa-solid fa-heart"></i></span>
+              </div>
+              <div class="left-control">
+                <span class="res">FHD+</span>
+                <span class="year">2020</span>
+              </div>
+
+              <div class="bottom-r-control">
+                <span class="season-con">الموسم</span>
+                <span class="season-n">1</span>
+              </div>
+              <div class="bottom-l-control">
+                <span class="episode-con">الحلقة</span>
+                <span class="episode-n">15</span>
+              </div>
+              <span class="episode-name">Venom</span>
+            </div>
+          </div>
+          <!--grid end-->
+          <!--grid start-->
+          <div class="keen-slider__slide number-slide9">
+            <div class="episode">
+              <div class="episode-img">
+                <img src="../assest\image\Venom.jpeg" alt="" srcset="" />
+              </div>
+              <div class="episode-content"></div>
+
+              <div class="right-control">
+                <span class="add-to"><i class="fa-solid fa-plus"></i></span>
+                <span class="love"><i class="fa-solid fa-heart"></i></span>
+              </div>
+              <div class="left-control">
+                <span class="res">FHD+</span>
+                <span class="year">2020</span>
+              </div>
+
+              <div class="bottom-r-control">
+                <span class="season-con">الموسم</span>
+                <span class="season-n">1</span>
+              </div>
+              <div class="bottom-l-control">
+                <span class="episode-con">الحلقة</span>
+                <span class="episode-n">15</span>
+              </div>
+              <span class="episode-name">Venom</span>
+            </div>
+          </div>
+          <!--grid end-->
+          <!--grid start-->
+          <div class="keen-slider__slide number-slide10">
+            <div class="episode">
+              <div class="episode-img">
+                <img src="../assest\image\Venom.jpeg" alt="" srcset="" />
+              </div>
+              <div class="episode-content"></div>
+
+              <div class="right-control">
+                <span class="add-to"><i class="fa-solid fa-plus"></i></span>
+                <span class="love"><i class="fa-solid fa-heart"></i></span>
+              </div>
+              <div class="left-control">
+                <span class="res">FHD+</span>
+                <span class="year">2020</span>
+              </div>
+
+              <div class="bottom-r-control">
+                <span class="season-con">الموسم</span>
+                <span class="season-n">1</span>
+              </div>
+              <div class="bottom-l-control">
+                <span class="episode-con">الحلقة</span>
+                <span class="episode-n">15</span>
+              </div>
+              <span class="episode-name">Venom</span>
+            </div>
+          </div>
+          <!--grid end-->
+        </div>
+      </div>
+    </section>
+    <!--arabic-section-->
+    <section class="content" id="arabic">
+      <div class="grid-father">
+        <div class="grid-content">
+          <sapn class="grid-text">أحدث المسلسلات العربية</sapn>
+          <button class="more">شاهد الكل</button>
+        </div>
+        <!--slider-->
+        <div id="my-keen-slider1" class="keen-slider">
+          <!--grid start-->
+          <div class="keen-slider__slide number-slide1">
+            <div class="episode">
+              <div class="episode-img">
+                <img
+                  src="../assest\image\Solo Leveling.jpeg"
+                  alt=""
+                  srcset=""
+                />
+              </div>
+              <div class="episode-content"></div>
+
+              <div class="right-control">
+                <span class="add-to"><i class="fa-solid fa-plus"></i></span>
+                <span class="love"><i class="fa-solid fa-heart"></i></span>
+              </div>
+              <div class="left-control">
+                <span class="res">FHD+</span>
+                <span class="year">2020</span>
+              </div>
+
+              <div class="bottom-r-control">
+                <span class="season-con">الموسم</span>
+                <span class="season-n">1</span>
+              </div>
+              <div class="bottom-l-control">
+                <span class="episode-con">الحلقة</span>
+                <span class="episode-n">15</span>
+              </div>
+              <span class="episode-name">Solo Leveling</span>
+            </div>
+          </div>
+          <!--grid end-->
+          <!--grid start-->
+          <div class="keen-slider__slide number-slide2">
+            <div class="episode">
+              <div class="episode-img">
+                <img
+                  src="../assest\image\Solo Leveling.jpeg"
+                  alt=""
+                  srcset=""
+                />
+              </div>
+              <div class="episode-content"></div>
+
+              <div class="right-control">
+                <span class="add-to"><i class="fa-solid fa-plus"></i></span>
+                <span class="love"><i class="fa-solid fa-heart"></i></span>
+              </div>
+              <div class="left-control">
+                <span class="res">FHD+</span>
+                <span class="year">2020</span>
+              </div>
+
+              <div class="bottom-r-control">
+                <span class="season-con">الموسم</span>
+                <span class="season-n">1</span>
+              </div>
+              <div class="bottom-l-control">
+                <span class="episode-con">الحلقة</span>
+                <span class="episode-n">15</span>
+              </div>
+              <span class="episode-name">Solo Leveling</span>
+            </div>
+          </div>
+          <!--grid end-->
+          <!--grid start-->
+          <div class="keen-slider__slide number-slide3">
+            <div class="episode">
+              <div class="episode-img">
+                <img
+                  src="../assest\image\Solo Leveling.jpeg"
+                  alt=""
+                  srcset=""
+                />
+              </div>
+              <div class="episode-content"></div>
+
+              <div class="right-control">
+                <span class="add-to"><i class="fa-solid fa-plus"></i></span>
+                <span class="love"><i class="fa-solid fa-heart"></i></span>
+              </div>
+              <div class="left-control">
+                <span class="res">FHD+</span>
+                <span class="year">2020</span>
+              </div>
+
+              <div class="bottom-r-control">
+                <span class="season-con">الموسم</span>
+                <span class="season-n">1</span>
+              </div>
+              <div class="bottom-l-control">
+                <span class="episode-con">الحلقة</span>
+                <span class="episode-n">15</span>
+              </div>
+              <span class="episode-name">Solo Leveling</span>
+            </div>
+          </div>
+          <!--grid end-->
+          <!--grid start-->
+          <div class="keen-slider__slide number-slide4">
+            <div class="episode">
+              <div class="episode-img">
+                <img
+                  src="../assest\image\Solo Leveling.jpeg"
+                  alt=""
+                  srcset=""
+                />
+              </div>
+              <div class="episode-content"></div>
+
+              <div class="right-control">
+                <span class="add-to"><i class="fa-solid fa-plus"></i></span>
+                <span class="love"><i class="fa-solid fa-heart"></i></span>
+              </div>
+              <div class="left-control">
+                <span class="res">FHD+</span>
+                <span class="year">2020</span>
+              </div>
+
+              <div class="bottom-r-control">
+                <span class="season-con">الموسم</span>
+                <span class="season-n">1</span>
+              </div>
+              <div class="bottom-l-control">
+                <span class="episode-con">الحلقة</span>
+                <span class="episode-n">15</span>
+              </div>
+              <span class="episode-name">Solo Leveling</span>
+            </div>
+          </div>
+          <!--grid end-->
+          <!--grid start-->
+          <div class="keen-slider__slide number-slide5">
+            <div class="episode">
+              <div class="episode-img">
+                <img
+                  src="../assest\image\Solo Leveling.jpeg"
+                  alt=""
+                  srcset=""
+                />
+              </div>
+              <div class="episode-content"></div>
+
+              <div class="right-control">
+                <span class="add-to"><i class="fa-solid fa-plus"></i></span>
+                <span class="love"><i class="fa-solid fa-heart"></i></span>
+              </div>
+              <div class="left-control">
+                <span class="res">FHD+</span>
+                <span class="year">2020</span>
+              </div>
+
+              <div class="bottom-r-control">
+                <span class="season-con">الموسم</span>
+                <span class="season-n">1</span>
+              </div>
+              <div class="bottom-l-control">
+                <span class="episode-con">الحلقة</span>
+                <span class="episode-n">15</span>
+              </div>
+              <span class="episode-name">Solo Leveling</span>
+            </div>
+          </div>
+          <!--grid end-->
+          <!--grid start-->
+          <div class="keen-slider__slide number-slide6">
+            <div class="episode">
+              <div class="episode-img">
+                <img
+                  src="../assest\image\Solo Leveling.jpeg"
+                  alt=""
+                  srcset=""
+                />
+              </div>
+              <div class="episode-content"></div>
+
+              <div class="right-control">
+                <span class="add-to"><i class="fa-solid fa-plus"></i></span>
+                <span class="love"><i class="fa-solid fa-heart"></i></span>
+              </div>
+              <div class="left-control">
+                <span class="res">FHD+</span>
+                <span class="year">2020</span>
+              </div>
+
+              <div class="bottom-r-control">
+                <span class="season-con">الموسم</span>
+                <span class="season-n">1</span>
+              </div>
+              <div class="bottom-l-control">
+                <span class="episode-con">الحلقة</span>
+                <span class="episode-n">15</span>
+              </div>
+              <span class="episode-name">Solo Leveling</span>
+            </div>
+          </div>
+          <!--grid end-->
+          <!--grid start-->
+          <div class="keen-slider__slide number-slide7">
+            <div class="episode">
+              <div class="episode-img">
+                <img
+                  src="../assest\image\Solo Leveling.jpeg"
+                  alt=""
+                  srcset=""
+                />
+              </div>
+              <div class="episode-content"></div>
+
+              <div class="right-control">
+                <span class="add-to"><i class="fa-solid fa-plus"></i></span>
+                <span class="love"><i class="fa-solid fa-heart"></i></span>
+              </div>
+              <div class="left-control">
+                <span class="res">FHD+</span>
+                <span class="year">2020</span>
+              </div>
+
+              <div class="bottom-r-control">
+                <span class="season-con">الموسم</span>
+                <span class="season-n">1</span>
+              </div>
+              <div class="bottom-l-control">
+                <span class="episode-con">الحلقة</span>
+                <span class="episode-n">15</span>
+              </div>
+              <span class="episode-name">Solo Leveling</span>
+            </div>
+          </div>
+          <!--grid end-->
+          <!--grid start-->
+          <div class="keen-slider__slide number-slide8">
+            <div class="episode">
+              <div class="episode-img">
+                <img
+                  src="../assest\image\Solo Leveling.jpeg"
+                  alt=""
+                  srcset=""
+                />
+              </div>
+              <div class="episode-content"></div>
+
+              <div class="right-control">
+                <span class="add-to"><i class="fa-solid fa-plus"></i></span>
+                <span class="love"><i class="fa-solid fa-heart"></i></span>
+              </div>
+              <div class="left-control">
+                <span class="res">FHD+</span>
+                <span class="year">2020</span>
+              </div>
+
+              <div class="bottom-r-control">
+                <span class="season-con">الموسم</span>
+                <span class="season-n">1</span>
+              </div>
+              <div class="bottom-l-control">
+                <span class="episode-con">الحلقة</span>
+                <span class="episode-n">15</span>
+              </div>
+              <span class="episode-name">Solo Leveling</span>
+            </div>
+          </div>
+          <!--grid end-->
+          <!--grid start-->
+          <div class="keen-slider__slide number-slide9">
+            <div class="episode">
+              <div class="episode-img">
+                <img
+                  src="../assest\image\Solo Leveling.jpeg"
+                  alt=""
+                  srcset=""
+                />
+              </div>
+              <div class="episode-content"></div>
+
+              <div class="right-control">
+                <span class="add-to"><i class="fa-solid fa-plus"></i></span>
+                <span class="love"><i class="fa-solid fa-heart"></i></span>
+              </div>
+              <div class="left-control">
+                <span class="res">FHD+</span>
+                <span class="year">2020</span>
+              </div>
+
+              <div class="bottom-r-control">
+                <span class="season-con">الموسم</span>
+                <span class="season-n">1</span>
+              </div>
+              <div class="bottom-l-control">
+                <span class="episode-con">الحلقة</span>
+                <span class="episode-n">15</span>
+              </div>
+              <span class="episode-name">Solo Leveling</span>
+            </div>
+          </div>
+          <!--grid end-->
+          <!--grid start-->
+          <div class="keen-slider__slide number-slide10">
+            <div class="episode">
+              <div class="episode-img">
+                <img
+                  src="../assest\image\Solo Leveling.jpeg"
+                  alt=""
+                  srcset=""
+                />
+              </div>
+              <div class="episode-content"></div>
+
+              <div class="right-control">
+                <span class="add-to"><i class="fa-solid fa-plus"></i></span>
+                <span class="love"><i class="fa-solid fa-heart"></i></span>
+              </div>
+              <div class="left-control">
+                <span class="res">FHD+</span>
+                <span class="year">2020</span>
+              </div>
+
+              <div class="bottom-r-control">
+                <span class="season-con">الموسم</span>
+                <span class="season-n">1</span>
+              </div>
+              <div class="bottom-l-control">
+                <span class="episode-con">الحلقة</span>
+                <span class="episode-n">15</span>
+              </div>
+              <span class="episode-name">Solo Leveling</span>
+            </div>
+          </div>
+          <!--grid end-->
+        </div>
+      </div>
+    </section>
+    <!--forging-section-->
+    <section class="content" id="forging">
+      <div class="grid-father">
+        <div class="grid-content">
+          <sapn class="grid-text">أحدث المسلسلات الأجنبية</sapn>
+          <button class="more">شاهد الكل</button>
+        </div>
+        <!--slider-->
+        <div id="my-keen-slider2" class="keen-slider">
+          <!--grid start-->
+          <div class="keen-slider__slide number-slide1">
+            <div class="episode">
+              <div class="episode-img">
+                <img
+                  src="../assest\image\Solo Leveling.jpeg"
+                  alt=""
+                  srcset=""
+                />
+              </div>
+              <div class="episode-content"></div>
+
+              <div class="right-control">
+                <span class="add-to"><i class="fa-solid fa-plus"></i></span>
+                <span class="add-to" onclick="eo()"
+                  ><i class="fas fa-heart"></i
+                ></span>
+              </div>
+              <div class="left-control">
+                <span class="res">FHD+</span>
+                <span class="year">2020</span>
+              </div>
+
+              <div class="bottom-r-control">
+                <span class="season-con">الموسم</span>
+                <span class="season-n">1</span>
+              </div>
+              <div class="bottom-l-control">
+                <span class="episode-con">الحلقة</span>
+                <span class="episode-n">15</span>
+              </div>
+              <span class="episode-name">Solo Leveling</span>
+            </div>
+          </div>
+          <!--grid end-->
+          <!--grid start-->
+          <div class="keen-slider__slide number-slide2">
+            <div class="episode">
+              <div class="episode-img">
+                <img
+                  src="../assest\image\Solo Leveling.jpeg"
+                  alt=""
+                  srcset=""
+                />
+              </div>
+              <div class="episode-content"></div>
+
+              <div class="right-control">
+                <span class="add-to"><i class="fa-solid fa-plus"></i></span>
+                <span class="love"><i class="fa-solid fa-heart"></i></span>
+              </div>
+              <div class="left-control">
+                <span class="res">FHD+</span>
+                <span class="year">2020</span>
+              </div>
+
+              <div class="bottom-r-control">
+                <span class="season-con">الموسم</span>
+                <span class="season-n">1</span>
+              </div>
+              <div class="bottom-l-control">
+                <span class="episode-con">الحلقة</span>
+                <span class="episode-n">15</span>
+              </div>
+              <span class="episode-name">Solo Leveling</span>
+            </div>
+          </div>
+          <!--grid end-->
+          <!--grid start-->
+          <div class="keen-slider__slide number-slide3">
+            <div class="episode">
+              <div class="episode-img">
+                <img
+                  src="../assest\image\Solo Leveling.jpeg"
+                  alt=""
+                  srcset=""
+                />
+              </div>
+              <div class="episode-content"></div>
+
+              <div class="right-control">
+                <span class="add-to"><i class="fa-solid fa-plus"></i></span>
+                <span class="love"><i class="fa-solid fa-heart"></i></span>
+              </div>
+              <div class="left-control">
+                <span class="res">FHD+</span>
+                <span class="year">2020</span>
+              </div>
+
+              <div class="bottom-r-control">
+                <span class="season-con">الموسم</span>
+                <span class="season-n">1</span>
+              </div>
+              <div class="bottom-l-control">
+                <span class="episode-con">الحلقة</span>
+                <span class="episode-n">15</span>
+              </div>
+              <span class="episode-name">Solo Leveling</span>
+            </div>
+          </div>
+          <!--grid end-->
+          <!--grid start-->
+          <div class="keen-slider__slide number-slide4">
+            <div class="episode">
+              <div class="episode-img">
+                <img
+                  src="../assest\image\Solo Leveling.jpeg"
+                  alt=""
+                  srcset=""
+                />
+              </div>
+              <div class="episode-content"></div>
+
+              <div class="right-control">
+                <span class="add-to"><i class="fa-solid fa-plus"></i></span>
+                <span class="love"><i class="fa-solid fa-heart"></i></span>
+              </div>
+              <div class="left-control">
+                <span class="res">FHD+</span>
+                <span class="year">2020</span>
+              </div>
+
+              <div class="bottom-r-control">
+                <span class="season-con">الموسم</span>
+                <span class="season-n">1</span>
+              </div>
+              <div class="bottom-l-control">
+                <span class="episode-con">الحلقة</span>
+                <span class="episode-n">15</span>
+              </div>
+              <span class="episode-name">Solo Leveling</span>
+            </div>
+          </div>
+          <!--grid end-->
+          <!--grid start-->
+          <div class="keen-slider__slide number-slide5">
+            <div class="episode">
+              <div class="episode-img">
+                <img
+                  src="../assest\image\Solo Leveling.jpeg"
+                  alt=""
+                  srcset=""
+                />
+              </div>
+              <div class="episode-content"></div>
+
+              <div class="right-control">
+                <span class="add-to"><i class="fa-solid fa-plus"></i></span>
+                <span class="love"><i class="fa-solid fa-heart"></i></span>
+              </div>
+              <div class="left-control">
+                <span class="res">FHD+</span>
+                <span class="year">2020</span>
+              </div>
+
+              <div class="bottom-r-control">
+                <span class="season-con">الموسم</span>
+                <span class="season-n">1</span>
+              </div>
+              <div class="bottom-l-control">
+                <span class="episode-con">الحلقة</span>
+                <span class="episode-n">15</span>
+              </div>
+              <span class="episode-name">Solo Leveling</span>
+            </div>
+          </div>
+          <!--grid end-->
+          <!--grid start-->
+          <div class="keen-slider__slide number-slide6">
+            <div class="episode">
+              <div class="episode-img">
+                <img
+                  src="../assest\image\Solo Leveling.jpeg"
+                  alt=""
+                  srcset=""
+                />
+              </div>
+              <div class="episode-content"></div>
+
+              <div class="right-control">
+                <span class="add-to"><i class="fa-solid fa-plus"></i></span>
+                <span class="love"><i class="fa-solid fa-heart"></i></span>
+              </div>
+              <div class="left-control">
+                <span class="res">FHD+</span>
+                <span class="year">2020</span>
+              </div>
+
+              <div class="bottom-r-control">
+                <span class="season-con">الموسم</span>
+                <span class="season-n">1</span>
+              </div>
+              <div class="bottom-l-control">
+                <span class="episode-con">الحلقة</span>
+                <span class="episode-n">15</span>
+              </div>
+              <span class="episode-name">Solo Leveling</span>
+            </div>
+          </div>
+          <!--grid end-->
+          <!--grid start-->
+          <div class="keen-slider__slide number-slide7">
+            <div class="episode">
+              <div class="episode-img">
+                <img
+                  src="../assest\image\Solo Leveling.jpeg"
+                  alt=""
+                  srcset=""
+                />
+              </div>
+              <div class="episode-content"></div>
+
+              <div class="right-control">
+                <span class="add-to"><i class="fa-solid fa-plus"></i></span>
+                <span class="love"><i class="fa-solid fa-heart"></i></span>
+              </div>
+              <div class="left-control">
+                <span class="res">FHD+</span>
+                <span class="year">2020</span>
+              </div>
+
+              <div class="bottom-r-control">
+                <span class="season-con">الموسم</span>
+                <span class="season-n">1</span>
+              </div>
+              <div class="bottom-l-control">
+                <span class="episode-con">الحلقة</span>
+                <span class="episode-n">15</span>
+              </div>
+              <span class="episode-name">Solo Leveling</span>
+            </div>
+          </div>
+          <!--grid end-->
+          <!--grid start-->
+          <div class="keen-slider__slide number-slide8">
+            <div class="episode">
+              <div class="episode-img">
+                <img
+                  src="../assest\image\Solo Leveling.jpeg"
+                  alt=""
+                  srcset=""
+                />
+              </div>
+              <div class="episode-content"></div>
+
+              <div class="right-control">
+                <span class="add-to"><i class="fa-solid fa-plus"></i></span>
+                <span class="love"><i class="fa-solid fa-heart"></i></span>
+              </div>
+              <div class="left-control">
+                <span class="res">FHD+</span>
+                <span class="year">2020</span>
+              </div>
+
+              <div class="bottom-r-control">
+                <span class="season-con">الموسم</span>
+                <span class="season-n">1</span>
+              </div>
+              <div class="bottom-l-control">
+                <span class="episode-con">الحلقة</span>
+                <span class="episode-n">15</span>
+              </div>
+              <span class="episode-name">Solo Leveling</span>
+            </div>
+          </div>
+          <!--grid end-->
+          <!--grid start-->
+          <div class="keen-slider__slide number-slide9">
+            <div class="episode">
+              <div class="episode-img">
+                <img
+                  src="../assest\image\Solo Leveling.jpeg"
+                  alt=""
+                  srcset=""
+                />
+              </div>
+              <div class="episode-content"></div>
+
+              <div class="right-control">
+                <span class="add-to"><i class="fa-solid fa-plus"></i></span>
+                <span class="love"><i class="fa-solid fa-heart"></i></span>
+              </div>
+              <div class="left-control">
+                <span class="res">FHD+</span>
+                <span class="year">2020</span>
+              </div>
+
+              <div class="bottom-r-control">
+                <span class="season-con">الموسم</span>
+                <span class="season-n">1</span>
+              </div>
+              <div class="bottom-l-control">
+                <span class="episode-con">الحلقة</span>
+                <span class="episode-n">15</span>
+              </div>
+              <span class="episode-name">Solo Leveling</span>
+            </div>
+          </div>
+          <!--grid end-->
+          <!--grid start-->
+          <div class="keen-slider__slide number-slide10">
+            <div class="episode">
+              <div class="episode-img">
+                <img
+                  src="../assest\image\Solo Leveling.jpeg"
+                  alt=""
+                  srcset=""
+                />
+              </div>
+              <div class="episode-content"></div>
+
+              <div class="right-control">
+                <span class="add-to"><i class="fa-solid fa-plus"></i></span>
+                <span class="love"><i class="fa-solid fa-heart"></i></span>
+              </div>
+              <div class="left-control">
+                <span class="res">FHD+</span>
+                <span class="year">2020</span>
+              </div>
+
+              <div class="bottom-r-control">
+                <span class="season-con">الموسم</span>
+                <span class="season-n">1</span>
+              </div>
+              <div class="bottom-l-control">
+                <span class="episode-con">الحلقة</span>
+                <span class="episode-n">15</span>
+              </div>
+              <span class="episode-name">Solo Leveling</span>
+            </div>
+          </div>
+          <!--grid end-->
+        </div>
+      </div>
+    </section>
+    <!--asian-section-->
+    <section class="content" id="asian">
+      <div class="grid-father">
+        <div class="grid-content">
+          <sapn class="grid-text">أحدث المسلسلات الآسيويه</sapn>
+          <button class="more">شاهد الكل</button>
+        </div>
+        <!--slider-->
+        <div id="my-keen-slider3" class="keen-slider">
+          <!--grid start-->
+          <div class="keen-slider__slide number-slide1">
+            <div class="episode">
+              <div class="episode-img">
+                <img
+                  src="../assest\image\Solo Leveling.jpeg"
+                  alt=""
+                  srcset=""
+                />
+              </div>
+              <div class="episode-content"></div>
+
+              <div class="right-control">
+                <span class="add-to"><i class="fa-solid fa-plus"></i></span>
+                <span class="love"><i class="fa-solid fa-heart"></i></span>
+              </div>
+              <div class="left-control">
+                <span class="res">FHD+</span>
+                <span class="year">2020</span>
+              </div>
+
+              <div class="bottom-r-control">
+                <span class="season-con">الموسم</span>
+                <span class="season-n">1</span>
+              </div>
+              <div class="bottom-l-control">
+                <span class="episode-con">الحلقة</span>
+                <span class="episode-n">15</span>
+              </div>
+              <span class="episode-name">Solo Leveling</span>
+            </div>
+          </div>
+          <!--grid end-->
+          <!--grid start-->
+          <div class="keen-slider__slide number-slide2">
+            <div class="episode">
+              <div class="episode-img">
+                <img
+                  src="../assest\image\Solo Leveling.jpeg"
+                  alt=""
+                  srcset=""
+                />
+              </div>
+              <div class="episode-content"></div>
+
+              <div class="right-control">
+                <span class="add-to"><i class="fa-solid fa-plus"></i></span>
+                <span class="love"><i class="fa-solid fa-heart"></i></span>
+              </div>
+              <div class="left-control">
+                <span class="res">FHD+</span>
+                <span class="year">2020</span>
+              </div>
+
+              <div class="bottom-r-control">
+                <span class="season-con">الموسم</span>
+                <span class="season-n">1</span>
+              </div>
+              <div class="bottom-l-control">
+                <span class="episode-con">الحلقة</span>
+                <span class="episode-n">15</span>
+              </div>
+              <span class="episode-name">Solo Leveling</span>
+            </div>
+          </div>
+          <!--grid end-->
+          <!--grid start-->
+          <div class="keen-slider__slide number-slide3">
+            <div class="episode">
+              <div class="episode-img">
+                <img
+                  src="../assest\image\Solo Leveling.jpeg"
+                  alt=""
+                  srcset=""
+                />
+              </div>
+              <div class="episode-content"></div>
+
+              <div class="right-control">
+                <span class="add-to"><i class="fa-solid fa-plus"></i></span>
+                <span class="love"><i class="fa-solid fa-heart"></i></span>
+              </div>
+              <div class="left-control">
+                <span class="res">FHD+</span>
+                <span class="year">2020</span>
+              </div>
+
+              <div class="bottom-r-control">
+                <span class="season-con">الموسم</span>
+                <span class="season-n">1</span>
+              </div>
+              <div class="bottom-l-control">
+                <span class="episode-con">الحلقة</span>
+                <span class="episode-n">15</span>
+              </div>
+              <span class="episode-name">Solo Leveling</span>
+            </div>
+          </div>
+          <!--grid end-->
+          <!--grid start-->
+          <div class="keen-slider__slide number-slide4">
+            <div class="episode">
+              <div class="episode-img">
+                <img
+                  src="../assest\image\Solo Leveling.jpeg"
+                  alt=""
+                  srcset=""
+                />
+              </div>
+              <div class="episode-content"></div>
+
+              <div class="right-control">
+                <span class="add-to"><i class="fa-solid fa-plus"></i></span>
+                <span class="love"><i class="fa-solid fa-heart"></i></span>
+              </div>
+              <div class="left-control">
+                <span class="res">FHD+</span>
+                <span class="year">2020</span>
+              </div>
+
+              <div class="bottom-r-control">
+                <span class="season-con">الموسم</span>
+                <span class="season-n">1</span>
+              </div>
+              <div class="bottom-l-control">
+                <span class="episode-con">الحلقة</span>
+                <span class="episode-n">15</span>
+              </div>
+              <span class="episode-name">Solo Leveling</span>
+            </div>
+          </div>
+          <!--grid end-->
+          <!--grid start-->
+          <div class="keen-slider__slide number-slide5">
+            <div class="episode">
+              <div class="episode-img">
+                <img
+                  src="../assest\image\Solo Leveling.jpeg"
+                  alt=""
+                  srcset=""
+                />
+              </div>
+              <div class="episode-content"></div>
+
+              <div class="right-control">
+                <span class="add-to"><i class="fa-solid fa-plus"></i></span>
+                <span class="love"><i class="fa-solid fa-heart"></i></span>
+              </div>
+              <div class="left-control">
+                <span class="res">FHD+</span>
+                <span class="year">2020</span>
+              </div>
+
+              <div class="bottom-r-control">
+                <span class="season-con">الموسم</span>
+                <span class="season-n">1</span>
+              </div>
+              <div class="bottom-l-control">
+                <span class="episode-con">الحلقة</span>
+                <span class="episode-n">15</span>
+              </div>
+              <span class="episode-name">Solo Leveling</span>
+            </div>
+          </div>
+          <!--grid end-->
+          <!--grid start-->
+          <div class="keen-slider__slide number-slide6">
+            <div class="episode">
+              <div class="episode-img">
+                <img
+                  src="../assest\image\Solo Leveling.jpeg"
+                  alt=""
+                  srcset=""
+                />
+              </div>
+              <div class="episode-content"></div>
+
+              <div class="right-control">
+                <span class="add-to"><i class="fa-solid fa-plus"></i></span>
+                <span class="love"><i class="fa-solid fa-heart"></i></span>
+              </div>
+              <div class="left-control">
+                <span class="res">FHD+</span>
+                <span class="year">2020</span>
+              </div>
+
+              <div class="bottom-r-control">
+                <span class="season-con">الموسم</span>
+                <span class="season-n">1</span>
+              </div>
+              <div class="bottom-l-control">
+                <span class="episode-con">الحلقة</span>
+                <span class="episode-n">15</span>
+              </div>
+              <span class="episode-name">Solo Leveling</span>
+            </div>
+          </div>
+          <!--grid end-->
+          <!--grid start-->
+          <div class="keen-slider__slide number-slide7">
+            <div class="episode">
+              <div class="episode-img">
+                <img
+                  src="../assest\image\Solo Leveling.jpeg"
+                  alt=""
+                  srcset=""
+                />
+              </div>
+              <div class="episode-content"></div>
+
+              <div class="right-control">
+                <span class="add-to"><i class="fa-solid fa-plus"></i></span>
+                <span class="love"><i class="fa-solid fa-heart"></i></span>
+              </div>
+              <div class="left-control">
+                <span class="res">FHD+</span>
+                <span class="year">2020</span>
+              </div>
+
+              <div class="bottom-r-control">
+                <span class="season-con">الموسم</span>
+                <span class="season-n">1</span>
+              </div>
+              <div class="bottom-l-control">
+                <span class="episode-con">الحلقة</span>
+                <span class="episode-n">15</span>
+              </div>
+              <span class="episode-name">Solo Leveling</span>
+            </div>
+          </div>
+          <!--grid end-->
+          <!--grid start-->
+          <div class="keen-slider__slide number-slide8">
+            <div class="episode">
+              <div class="episode-img">
+                <img
+                  src="../assest\image\Solo Leveling.jpeg"
+                  alt=""
+                  srcset=""
+                />
+              </div>
+              <div class="episode-content"></div>
+
+              <div class="right-control">
+                <span class="add-to"><i class="fa-solid fa-plus"></i></span>
+                <span class="love"><i class="fa-solid fa-heart"></i></span>
+              </div>
+              <div class="left-control">
+                <span class="res">FHD+</span>
+                <span class="year">2020</span>
+              </div>
+
+              <div class="bottom-r-control">
+                <span class="season-con">الموسم</span>
+                <span class="season-n">1</span>
+              </div>
+              <div class="bottom-l-control">
+                <span class="episode-con">الحلقة</span>
+                <span class="episode-n">15</span>
+              </div>
+              <span class="episode-name">Solo Leveling</span>
+            </div>
+          </div>
+          <!--grid end-->
+          <!--grid start-->
+          <div class="keen-slider__slide number-slide9">
+            <div class="episode">
+              <div class="episode-img">
+                <img
+                  src="../assest\image\Solo Leveling.jpeg"
+                  alt=""
+                  srcset=""
+                />
+              </div>
+              <div class="episode-content"></div>
+
+              <div class="right-control">
+                <span class="add-to"><i class="fa-solid fa-plus"></i></span>
+                <span class="love"><i class="fa-solid fa-heart"></i></span>
+              </div>
+              <div class="left-control">
+                <span class="res">FHD+</span>
+                <span class="year">2020</span>
+              </div>
+
+              <div class="bottom-r-control">
+                <span class="season-con">الموسم</span>
+                <span class="season-n">1</span>
+              </div>
+              <div class="bottom-l-control">
+                <span class="episode-con">الحلقة</span>
+                <span class="episode-n">15</span>
+              </div>
+              <span class="episode-name">Solo Leveling</span>
+            </div>
+          </div>
+          <!--grid end-->
+          <!--grid start-->
+          <div class="keen-slider__slide number-slide10">
+            <div class="episode">
+              <div class="episode-img">
+                <img
+                  src="../assest\image\Solo Leveling.jpeg"
+                  alt=""
+                  srcset=""
+                />
+              </div>
+              <div class="episode-content"></div>
+
+              <div class="right-control">
+                <span class="add-to"><i class="fa-solid fa-plus"></i></span>
+                <span class="love"><i class="fa-solid fa-heart"></i></span>
+              </div>
+              <div class="left-control">
+                <span class="res">FHD+</span>
+                <span class="year">2020</span>
+              </div>
+
+              <div class="bottom-r-control">
+                <span class="season-con">الموسم</span>
+                <span class="season-n">1</span>
+              </div>
+              <div class="bottom-l-control">
+                <span class="episode-con">الحلقة</span>
+                <span class="episode-n">15</span>
+              </div>
+              <span class="episode-name">Solo Leveling</span>
+            </div>
+          </div>
+          <!--grid end-->
+        </div>
+      </div>
+    </section>
+    <!--turkish-section-->
+    <section class="content" id="turkish">
+      <div class="grid-father">
+        <div class="grid-content">
+          <sapn class="grid-text">أحدث المسلسلات التركية</sapn>
+          <button class="more">شاهد الكل</button>
+        </div>
+        <!--slider-->
+        <div id="my-keen-slider4" class="keen-slider">
+          <!--grid start-->
+          <div class="keen-slider__slide number-slide1">
+            <div class="episode">
+              <div class="episode-img">
+                <img
+                  src="../assest\image\Solo Leveling.jpeg"
+                  alt=""
+                  srcset=""
+                />
+              </div>
+              <div class="episode-content"></div>
+
+              <div class="right-control">
+                <span class="add-to"><i class="fa-solid fa-plus"></i></span>
+                <span class="love"><i class="fa-solid fa-heart"></i></span>
+              </div>
+              <div class="left-control">
+                <span class="res">FHD+</span>
+                <span class="year">2020</span>
+              </div>
+
+              <div class="bottom-r-control">
+                <span class="season-con">الموسم</span>
+                <span class="season-n">1</span>
+              </div>
+              <div class="bottom-l-control">
+                <span class="episode-con">الحلقة</span>
+                <span class="episode-n">15</span>
+              </div>
+              <span class="episode-name">Solo Leveling</span>
+            </div>
+          </div>
+          <!--grid end-->
+          <!--grid start-->
+          <div class="keen-slider__slide number-slide2">
+            <div class="episode">
+              <div class="episode-img">
+                <img
+                  src="../assest\image\Solo Leveling.jpeg"
+                  alt=""
+                  srcset=""
+                />
+              </div>
+              <div class="episode-content"></div>
+
+              <div class="right-control">
+                <span class="add-to"><i class="fa-solid fa-plus"></i></span>
+                <span class="love"><i class="fa-solid fa-heart"></i></span>
+              </div>
+              <div class="left-control">
+                <span class="res">FHD+</span>
+                <span class="year">2020</span>
+              </div>
+
+              <div class="bottom-r-control">
+                <span class="season-con">الموسم</span>
+                <span class="season-n">1</span>
+              </div>
+              <div class="bottom-l-control">
+                <span class="episode-con">الحلقة</span>
+                <span class="episode-n">15</span>
+              </div>
+              <span class="episode-name">Solo Leveling</span>
+            </div>
+          </div>
+          <!--grid end-->
+          <!--grid start-->
+          <div class="keen-slider__slide number-slide3">
+            <div class="episode">
+              <div class="episode-img">
+                <img
+                  src="../assest\image\Solo Leveling.jpeg"
+                  alt=""
+                  srcset=""
+                />
+              </div>
+              <div class="episode-content"></div>
+
+              <div class="right-control">
+                <span class="add-to"><i class="fa-solid fa-plus"></i></span>
+                <span class="love"><i class="fa-solid fa-heart"></i></span>
+              </div>
+              <div class="left-control">
+                <span class="res">FHD+</span>
+                <span class="year">2020</span>
+              </div>
+
+              <div class="bottom-r-control">
+                <span class="season-con">الموسم</span>
+                <span class="season-n">1</span>
+              </div>
+              <div class="bottom-l-control">
+                <span class="episode-con">الحلقة</span>
+                <span class="episode-n">15</span>
+              </div>
+              <span class="episode-name">Solo Leveling</span>
+            </div>
+          </div>
+          <!--grid end-->
+          <!--grid start-->
+          <div class="keen-slider__slide number-slide4">
+            <div class="episode">
+              <div class="episode-img">
+                <img
+                  src="../assest\image\Solo Leveling.jpeg"
+                  alt=""
+                  srcset=""
+                />
+              </div>
+              <div class="episode-content"></div>
+
+              <div class="right-control">
+                <span class="add-to"><i class="fa-solid fa-plus"></i></span>
+                <span class="love"><i class="fa-solid fa-heart"></i></span>
+              </div>
+              <div class="left-control">
+                <span class="res">FHD+</span>
+                <span class="year">2020</span>
+              </div>
+
+              <div class="bottom-r-control">
+                <span class="season-con">الموسم</span>
+                <span class="season-n">1</span>
+              </div>
+              <div class="bottom-l-control">
+                <span class="episode-con">الحلقة</span>
+                <span class="episode-n">15</span>
+              </div>
+              <span class="episode-name">Solo Leveling</span>
+            </div>
+          </div>
+          <!--grid end-->
+          <!--grid start-->
+          <div class="keen-slider__slide number-slide5">
+            <div class="episode">
+              <div class="episode-img">
+                <img
+                  src="../assest\image\Solo Leveling.jpeg"
+                  alt=""
+                  srcset=""
+                />
+              </div>
+              <div class="episode-content"></div>
+
+              <div class="right-control">
+                <span class="add-to"><i class="fa-solid fa-plus"></i></span>
+                <span class="love"><i class="fa-solid fa-heart"></i></span>
+              </div>
+              <div class="left-control">
+                <span class="res">FHD+</span>
+                <span class="year">2020</span>
+              </div>
+
+              <div class="bottom-r-control">
+                <span class="season-con">الموسم</span>
+                <span class="season-n">1</span>
+              </div>
+              <div class="bottom-l-control">
+                <span class="episode-con">الحلقة</span>
+                <span class="episode-n">15</span>
+              </div>
+              <span class="episode-name">Solo Leveling</span>
+            </div>
+          </div>
+          <!--grid end-->
+          <!--grid start-->
+          <div class="keen-slider__slide number-slide6">
+            <div class="episode">
+              <div class="episode-img">
+                <img
+                  src="../assest\image\Solo Leveling.jpeg"
+                  alt=""
+                  srcset=""
+                />
+              </div>
+              <div class="episode-content"></div>
+
+              <div class="right-control">
+                <span class="add-to"><i class="fa-solid fa-plus"></i></span>
+                <span class="love"><i class="fa-solid fa-heart"></i></span>
+              </div>
+              <div class="left-control">
+                <span class="res">FHD+</span>
+                <span class="year">2020</span>
+              </div>
+
+              <div class="bottom-r-control">
+                <span class="season-con">الموسم</span>
+                <span class="season-n">1</span>
+              </div>
+              <div class="bottom-l-control">
+                <span class="episode-con">الحلقة</span>
+                <span class="episode-n">15</span>
+              </div>
+              <span class="episode-name">Solo Leveling</span>
+            </div>
+          </div>
+          <!--grid end-->
+          <!--grid start-->
+          <div class="keen-slider__slide number-slide7">
+            <div class="episode">
+              <div class="episode-img">
+                <img
+                  src="../assest\image\Solo Leveling.jpeg"
+                  alt=""
+                  srcset=""
+                />
+              </div>
+              <div class="episode-content"></div>
+
+              <div class="right-control">
+                <span class="add-to"><i class="fa-solid fa-plus"></i></span>
+                <span class="love"><i class="fa-solid fa-heart"></i></span>
+              </div>
+              <div class="left-control">
+                <span class="res">FHD+</span>
+                <span class="year">2020</span>
+              </div>
+
+              <div class="bottom-r-control">
+                <span class="season-con">الموسم</span>
+                <span class="season-n">1</span>
+              </div>
+              <div class="bottom-l-control">
+                <span class="episode-con">الحلقة</span>
+                <span class="episode-n">15</span>
+              </div>
+              <span class="episode-name">Solo Leveling</span>
+            </div>
+          </div>
+          <!--grid end-->
+          <!--grid start-->
+          <div class="keen-slider__slide number-slide8">
+            <div class="episode">
+              <div class="episode-img">
+                <img
+                  src="../assest\image\Solo Leveling.jpeg"
+                  alt=""
+                  srcset=""
+                />
+              </div>
+              <div class="episode-content"></div>
+
+              <div class="right-control">
+                <span class="add-to"><i class="fa-solid fa-plus"></i></span>
+                <span class="love"><i class="fa-solid fa-heart"></i></span>
+              </div>
+              <div class="left-control">
+                <span class="res">FHD+</span>
+                <span class="year">2020</span>
+              </div>
+
+              <div class="bottom-r-control">
+                <span class="season-con">الموسم</span>
+                <span class="season-n">1</span>
+              </div>
+              <div class="bottom-l-control">
+                <span class="episode-con">الحلقة</span>
+                <span class="episode-n">15</span>
+              </div>
+              <span class="episode-name">Solo Leveling</span>
+            </div>
+          </div>
+          <!--grid end-->
+          <!--grid start-->
+          <div class="keen-slider__slide number-slide9">
+            <div class="episode">
+              <div class="episode-img">
+                <img
+                  src="../assest\image\Solo Leveling.jpeg"
+                  alt=""
+                  srcset=""
+                />
+              </div>
+              <div class="episode-content"></div>
+
+              <div class="right-control">
+                <span class="add-to"><i class="fa-solid fa-plus"></i></span>
+                <span class="love"><i class="fa-solid fa-heart"></i></span>
+              </div>
+              <div class="left-control">
+                <span class="res">FHD+</span>
+                <span class="year">2020</span>
+              </div>
+
+              <div class="bottom-r-control">
+                <span class="season-con">الموسم</span>
+                <span class="season-n">1</span>
+              </div>
+              <div class="bottom-l-control">
+                <span class="episode-con">الحلقة</span>
+                <span class="episode-n">15</span>
+              </div>
+              <span class="episode-name">Solo Leveling</span>
+            </div>
+          </div>
+          <!--grid end-->
+          <!--grid start-->
+          <div class="keen-slider__slide number-slide10">
+            <div class="episode">
+              <div class="episode-img">
+                <img
+                  src="../assest\image\Solo Leveling.jpeg"
+                  alt=""
+                  srcset=""
+                />
+              </div>
+              <div class="episode-content"></div>
+
+              <div class="right-control">
+                <span class="add-to"><i class="fa-solid fa-plus"></i></span>
+                <span class="love"><i class="fa-solid fa-heart"></i></span>
+              </div>
+              <div class="left-control">
+                <span class="res">FHD+</span>
+                <span class="year">2020</span>
+              </div>
+
+              <div class="bottom-r-control">
+                <span class="season-con">الموسم</span>
+                <span class="season-n">1</span>
+              </div>
+              <div class="bottom-l-control">
+                <span class="episode-con">الحلقة</span>
+                <span class="episode-n">15</span>
+              </div>
+              <span class="episode-name">Solo Leveling</span>
+            </div>
+          </div>
+          <!--grid end-->
+        </div>
+      </div>
+    </section>
+    <!--hindi-section-->
+    <section class="content" id="hindi">
+      <div class="grid-father">
+        <div class="grid-content">
+          <sapn class="grid-text">أحدث المسلسلات الهندية</sapn>
+          <button class="more">شاهد الكل</button>
+        </div>
+        <!--slider-->
+        <div id="my-keen-slider5" class="keen-slider">
+          <!--grid start-->
+          <div class="keen-slider__slide number-slide1">
+            <div class="episode">
+              <div class="episode-img">
+                <img
+                  src="../assest\image\Solo Leveling.jpeg"
+                  alt=""
+                  srcset=""
+                />
+              </div>
+              <div class="episode-content"></div>
+
+              <div class="right-control">
+                <span class="add-to"><i class="fa-solid fa-plus"></i></span>
+                <span class="love"><i class="fa-solid fa-heart"></i></span>
+              </div>
+              <div class="left-control">
+                <span class="res">FHD+</span>
+                <span class="year">2020</span>
+              </div>
+
+              <div class="bottom-r-control">
+                <span class="season-con">الموسم</span>
+                <span class="season-n">1</span>
+              </div>
+              <div class="bottom-l-control">
+                <span class="episode-con">الحلقة</span>
+                <span class="episode-n">15</span>
+              </div>
+              <span class="episode-name">Solo Leveling</span>
+            </div>
+          </div>
+          <!--grid end-->
+          <!--grid start-->
+          <div class="keen-slider__slide number-slide2">
+            <div class="episode">
+              <div class="episode-img">
+                <img
+                  src="../assest\image\Solo Leveling.jpeg"
+                  alt=""
+                  srcset=""
+                />
+              </div>
+              <div class="episode-content"></div>
+
+              <div class="right-control">
+                <span class="add-to"><i class="fa-solid fa-plus"></i></span>
+                <span class="love"><i class="fa-solid fa-heart"></i></span>
+              </div>
+              <div class="left-control">
+                <span class="res">FHD+</span>
+                <span class="year">2020</span>
+              </div>
+
+              <div class="bottom-r-control">
+                <span class="season-con">الموسم</span>
+                <span class="season-n">1</span>
+              </div>
+              <div class="bottom-l-control">
+                <span class="episode-con">الحلقة</span>
+                <span class="episode-n">15</span>
+              </div>
+              <span class="episode-name">Solo Leveling</span>
+            </div>
+          </div>
+          <!--grid end-->
+          <!--grid start-->
+          <div class="keen-slider__slide number-slide3">
+            <div class="episode">
+              <div class="episode-img">
+                <img
+                  src="../assest\image\Solo Leveling.jpeg"
+                  alt=""
+                  srcset=""
+                />
+              </div>
+              <div class="episode-content"></div>
+
+              <div class="right-control">
+                <span class="add-to"><i class="fa-solid fa-plus"></i></span>
+                <span class="love"><i class="fa-solid fa-heart"></i></span>
+              </div>
+              <div class="left-control">
+                <span class="res">FHD+</span>
+                <span class="year">2020</span>
+              </div>
+
+              <div class="bottom-r-control">
+                <span class="season-con">الموسم</span>
+                <span class="season-n">1</span>
+              </div>
+              <div class="bottom-l-control">
+                <span class="episode-con">الحلقة</span>
+                <span class="episode-n">15</span>
+              </div>
+              <span class="episode-name">Solo Leveling</span>
+            </div>
+          </div>
+          <!--grid end-->
+          <!--grid start-->
+          <div class="keen-slider__slide number-slide4">
+            <div class="episode">
+              <div class="episode-img">
+                <img
+                  src="../assest\image\Solo Leveling.jpeg"
+                  alt=""
+                  srcset=""
+                />
+              </div>
+              <div class="episode-content"></div>
+
+              <div class="right-control">
+                <span class="add-to"><i class="fa-solid fa-plus"></i></span>
+                <span class="love"><i class="fa-solid fa-heart"></i></span>
+              </div>
+              <div class="left-control">
+                <span class="res">FHD+</span>
+                <span class="year">2020</span>
+              </div>
+
+              <div class="bottom-r-control">
+                <span class="season-con">الموسم</span>
+                <span class="season-n">1</span>
+              </div>
+              <div class="bottom-l-control">
+                <span class="episode-con">الحلقة</span>
+                <span class="episode-n">15</span>
+              </div>
+              <span class="episode-name">Solo Leveling</span>
+            </div>
+          </div>
+          <!--grid end-->
+          <!--grid start-->
+          <div class="keen-slider__slide number-slide5">
+            <div class="episode">
+              <div class="episode-img">
+                <img
+                  src="../assest\image\Solo Leveling.jpeg"
+                  alt=""
+                  srcset=""
+                />
+              </div>
+              <div class="episode-content"></div>
+
+              <div class="right-control">
+                <span class="add-to"><i class="fa-solid fa-plus"></i></span>
+                <span class="love"><i class="fa-solid fa-heart"></i></span>
+              </div>
+              <div class="left-control">
+                <span class="res">FHD+</span>
+                <span class="year">2020</span>
+              </div>
+
+              <div class="bottom-r-control">
+                <span class="season-con">الموسم</span>
+                <span class="season-n">1</span>
+              </div>
+              <div class="bottom-l-control">
+                <span class="episode-con">الحلقة</span>
+                <span class="episode-n">15</span>
+              </div>
+              <span class="episode-name">Solo Leveling</span>
+            </div>
+          </div>
+          <!--grid end-->
+          <!--grid start-->
+          <div class="keen-slider__slide number-slide6">
+            <div class="episode">
+              <div class="episode-img">
+                <img
+                  src="../assest\image\Solo Leveling.jpeg"
+                  alt=""
+                  srcset=""
+                />
+              </div>
+              <div class="episode-content"></div>
+
+              <div class="right-control">
+                <span class="add-to"><i class="fa-solid fa-plus"></i></span>
+                <span class="love"><i class="fa-solid fa-heart"></i></span>
+              </div>
+              <div class="left-control">
+                <span class="res">FHD+</span>
+                <span class="year">2020</span>
+              </div>
+
+              <div class="bottom-r-control">
+                <span class="season-con">الموسم</span>
+                <span class="season-n">1</span>
+              </div>
+              <div class="bottom-l-control">
+                <span class="episode-con">الحلقة</span>
+                <span class="episode-n">15</span>
+              </div>
+              <span class="episode-name">Solo Leveling</span>
+            </div>
+          </div>
+          <!--grid end-->
+          <!--grid start-->
+          <div class="keen-slider__slide number-slide7">
+            <div class="episode">
+              <div class="episode-img">
+                <img
+                  src="../assest\image\Solo Leveling.jpeg"
+                  alt=""
+                  srcset=""
+                />
+              </div>
+              <div class="episode-content"></div>
+
+              <div class="right-control">
+                <span class="add-to"><i class="fa-solid fa-plus"></i></span>
+                <span class="love"><i class="fa-solid fa-heart"></i></span>
+              </div>
+              <div class="left-control">
+                <span class="res">FHD+</span>
+                <span class="year">2020</span>
+              </div>
+
+              <div class="bottom-r-control">
+                <span class="season-con">الموسم</span>
+                <span class="season-n">1</span>
+              </div>
+              <div class="bottom-l-control">
+                <span class="episode-con">الحلقة</span>
+                <span class="episode-n">15</span>
+              </div>
+              <span class="episode-name">Solo Leveling</span>
+            </div>
+          </div>
+          <!--grid end-->
+          <!--grid start-->
+          <div class="keen-slider__slide number-slide8">
+            <div class="episode">
+              <div class="episode-img">
+                <img
+                  src="../assest\image\Solo Leveling.jpeg"
+                  alt=""
+                  srcset=""
+                />
+              </div>
+              <div class="episode-content"></div>
+
+              <div class="right-control">
+                <span class="add-to"><i class="fa-solid fa-plus"></i></span>
+                <span class="love"><i class="fa-solid fa-heart"></i></span>
+              </div>
+              <div class="left-control">
+                <span class="res">FHD+</span>
+                <span class="year">2020</span>
+              </div>
+
+              <div class="bottom-r-control">
+                <span class="season-con">الموسم</span>
+                <span class="season-n">1</span>
+              </div>
+              <div class="bottom-l-control">
+                <span class="episode-con">الحلقة</span>
+                <span class="episode-n">15</span>
+              </div>
+              <span class="episode-name">Solo Leveling</span>
+            </div>
+          </div>
+          <!--grid end-->
+          <!--grid start-->
+          <div class="keen-slider__slide number-slide9">
+            <div class="episode">
+              <div class="episode-img">
+                <img
+                  src="../assest\image\Solo Leveling.jpeg"
+                  alt=""
+                  srcset=""
+                />
+              </div>
+              <div class="episode-content"></div>
+
+              <div class="right-control">
+                <span class="add-to"><i class="fa-solid fa-plus"></i></span>
+                <span class="love"><i class="fa-solid fa-heart"></i></span>
+              </div>
+              <div class="left-control">
+                <span class="res">FHD+</span>
+                <span class="year">2020</span>
+              </div>
+
+              <div class="bottom-r-control">
+                <span class="season-con">الموسم</span>
+                <span class="season-n">1</span>
+              </div>
+              <div class="bottom-l-control">
+                <span class="episode-con">الحلقة</span>
+                <span class="episode-n">15</span>
+              </div>
+              <span class="episode-name">Solo Leveling</span>
+            </div>
+          </div>
+          <!--grid end-->
+          <!--grid start-->
+          <div class="keen-slider__slide number-slide10">
+            <div class="episode">
+              <div class="episode-img">
+                <img
+                  src="../assest\image\Solo Leveling.jpeg"
+                  alt=""
+                  srcset=""
+                />
+              </div>
+              <div class="episode-content"></div>
+
+              <div class="right-control">
+                <span class="add-to"><i class="fa-solid fa-plus"></i></span>
+                <span class="love"><i class="fa-solid fa-heart"></i></span>
+              </div>
+              <div class="left-control">
+                <span class="res">FHD+</span>
+                <span class="year">2020</span>
+              </div>
+
+              <div class="bottom-r-control">
+                <span class="season-con">الموسم</span>
+                <span class="season-n">1</span>
+              </div>
+              <div class="bottom-l-control">
+                <span class="episode-con">الحلقة</span>
+                <span class="episode-n">15</span>
+              </div>
+              <span class="episode-name">Solo Leveling</span>
+            </div>
+          </div>
+          <!--grid end-->
+        </div>
+      </div>
+    </section>
+    <!--program-section-->
+    <section class="content" id="program">
+      <div class="grid-father">
+        <div class="grid-content">
+          <sapn class="grid-text">أحدث البرامج </sapn>
+          <button class="more">شاهد الكل</button>
+        </div>
+        <!--slider-->
+        <div id="my-keen-slider6" class="keen-slider">
+          <!--grid start-->
+          <div class="keen-slider__slide number-slide1">
+            <div class="episode">
+              <div class="episode-img">
+                <img
+                  src="../assest\image\Solo Leveling.jpeg"
+                  alt=""
+                  srcset=""
+                />
+              </div>
+              <div class="episode-content"></div>
+
+              <div class="right-control">
+                <span class="add-to"><i class="fa-solid fa-plus"></i></span>
+                <span class="love"><i class="fa-solid fa-heart"></i></span>
+              </div>
+              <div class="left-control">
+                <span class="res">FHD+</span>
+                <span class="year">2020</span>
+              </div>
+
+              <div class="bottom-r-control">
+                <span class="season-con">الموسم</span>
+                <span class="season-n">1</span>
+              </div>
+              <div class="bottom-l-control">
+                <span class="episode-con">الحلقة</span>
+                <span class="episode-n">15</span>
+              </div>
+              <span class="episode-name">Solo Leveling</span>
+            </div>
+          </div>
+          <!--grid end-->
+          <!--grid start-->
+          <div class="keen-slider__slide number-slide2">
+            <div class="episode">
+              <div class="episode-img">
+                <img
+                  src="../assest\image\Solo Leveling.jpeg"
+                  alt=""
+                  srcset=""
+                />
+              </div>
+              <div class="episode-content"></div>
+
+              <div class="right-control">
+                <span class="add-to"><i class="fa-solid fa-plus"></i></span>
+                <span class="love"><i class="fa-solid fa-heart"></i></span>
+              </div>
+              <div class="left-control">
+                <span class="res">FHD+</span>
+                <span class="year">2020</span>
+              </div>
+
+              <div class="bottom-r-control">
+                <span class="season-con">الموسم</span>
+                <span class="season-n">1</span>
+              </div>
+              <div class="bottom-l-control">
+                <span class="episode-con">الحلقة</span>
+                <span class="episode-n">15</span>
+              </div>
+              <span class="episode-name">Solo Leveling</span>
+            </div>
+          </div>
+          <!--grid end-->
+          <!--grid start-->
+          <div class="keen-slider__slide number-slide3">
+            <div class="episode">
+              <div class="episode-img">
+                <img
+                  src="../assest\image\Solo Leveling.jpeg"
+                  alt=""
+                  srcset=""
+                />
+              </div>
+              <div class="episode-content"></div>
+
+              <div class="right-control">
+                <span class="add-to"><i class="fa-solid fa-plus"></i></span>
+                <span class="love"><i class="fa-solid fa-heart"></i></span>
+              </div>
+              <div class="left-control">
+                <span class="res">FHD+</span>
+                <span class="year">2020</span>
+              </div>
+
+              <div class="bottom-r-control">
+                <span class="season-con">الموسم</span>
+                <span class="season-n">1</span>
+              </div>
+              <div class="bottom-l-control">
+                <span class="episode-con">الحلقة</span>
+                <span class="episode-n">15</span>
+              </div>
+              <span class="episode-name">Solo Leveling</span>
+            </div>
+          </div>
+          <!--grid end-->
+          <!--grid start-->
+          <div class="keen-slider__slide number-slide4">
+            <div class="episode">
+              <div class="episode-img">
+                <img
+                  src="../assest\image\Solo Leveling.jpeg"
+                  alt=""
+                  srcset=""
+                />
+              </div>
+              <div class="episode-content"></div>
+
+              <div class="right-control">
+                <span class="add-to"><i class="fa-solid fa-plus"></i></span>
+                <span class="love"><i class="fa-solid fa-heart"></i></span>
+              </div>
+              <div class="left-control">
+                <span class="res">FHD+</span>
+                <span class="year">2020</span>
+              </div>
+
+              <div class="bottom-r-control">
+                <span class="season-con">الموسم</span>
+                <span class="season-n">1</span>
+              </div>
+              <div class="bottom-l-control">
+                <span class="episode-con">الحلقة</span>
+                <span class="episode-n">15</span>
+              </div>
+              <span class="episode-name">Solo Leveling</span>
+            </div>
+          </div>
+          <!--grid end-->
+          <!--grid start-->
+          <div class="keen-slider__slide number-slide5">
+            <div class="episode">
+              <div class="episode-img">
+                <img
+                  src="../assest\image\Solo Leveling.jpeg"
+                  alt=""
+                  srcset=""
+                />
+              </div>
+              <div class="episode-content"></div>
+
+              <div class="right-control">
+                <span class="add-to"><i class="fa-solid fa-plus"></i></span>
+                <span class="love"><i class="fa-solid fa-heart"></i></span>
+              </div>
+              <div class="left-control">
+                <span class="res">FHD+</span>
+                <span class="year">2020</span>
+              </div>
+
+              <div class="bottom-r-control">
+                <span class="season-con">الموسم</span>
+                <span class="season-n">1</span>
+              </div>
+              <div class="bottom-l-control">
+                <span class="episode-con">الحلقة</span>
+                <span class="episode-n">15</span>
+              </div>
+              <span class="episode-name">Solo Leveling</span>
+            </div>
+          </div>
+          <!--grid end-->
+          <!--grid start-->
+          <div class="keen-slider__slide number-slide6">
+            <div class="episode">
+              <div class="episode-img">
+                <img
+                  src="../assest\image\Solo Leveling.jpeg"
+                  alt=""
+                  srcset=""
+                />
+              </div>
+              <div class="episode-content"></div>
+
+              <div class="right-control">
+                <span class="add-to"><i class="fa-solid fa-plus"></i></span>
+                <span class="love"><i class="fa-solid fa-heart"></i></span>
+              </div>
+              <div class="left-control">
+                <span class="res">FHD+</span>
+                <span class="year">2020</span>
+              </div>
+
+              <div class="bottom-r-control">
+                <span class="season-con">الموسم</span>
+                <span class="season-n">1</span>
+              </div>
+              <div class="bottom-l-control">
+                <span class="episode-con">الحلقة</span>
+                <span class="episode-n">15</span>
+              </div>
+              <span class="episode-name">Solo Leveling</span>
+            </div>
+          </div>
+          <!--grid end-->
+          <!--grid start-->
+          <div class="keen-slider__slide number-slide7">
+            <div class="episode">
+              <div class="episode-img">
+                <img
+                  src="../assest\image\Solo Leveling.jpeg"
+                  alt=""
+                  srcset=""
+                />
+              </div>
+              <div class="episode-content"></div>
+
+              <div class="right-control">
+                <span class="add-to"><i class="fa-solid fa-plus"></i></span>
+                <span class="love"><i class="fa-solid fa-heart"></i></span>
+              </div>
+              <div class="left-control">
+                <span class="res">FHD+</span>
+                <span class="year">2020</span>
+              </div>
+
+              <div class="bottom-r-control">
+                <span class="season-con">الموسم</span>
+                <span class="season-n">1</span>
+              </div>
+              <div class="bottom-l-control">
+                <span class="episode-con">الحلقة</span>
+                <span class="episode-n">15</span>
+              </div>
+              <span class="episode-name">Solo Leveling</span>
+            </div>
+          </div>
+          <!--grid end-->
+          <!--grid start-->
+          <div class="keen-slider__slide number-slide8">
+            <div class="episode">
+              <div class="episode-img">
+                <img
+                  src="../assest\image\Solo Leveling.jpeg"
+                  alt=""
+                  srcset=""
+                />
+              </div>
+              <div class="episode-content"></div>
+
+              <div class="right-control">
+                <span class="add-to"><i class="fa-solid fa-plus"></i></span>
+                <span class="love"><i class="fa-solid fa-heart"></i></span>
+              </div>
+              <div class="left-control">
+                <span class="res">FHD+</span>
+                <span class="year">2020</span>
+              </div>
+
+              <div class="bottom-r-control">
+                <span class="season-con">الموسم</span>
+                <span class="season-n">1</span>
+              </div>
+              <div class="bottom-l-control">
+                <span class="episode-con">الحلقة</span>
+                <span class="episode-n">15</span>
+              </div>
+              <span class="episode-name">Solo Leveling</span>
+            </div>
+          </div>
+          <!--grid end-->
+          <!--grid start-->
+          <div class="keen-slider__slide number-slide9">
+            <div class="episode">
+              <div class="episode-img">
+                <img
+                  src="../assest\image\Solo Leveling.jpeg"
+                  alt=""
+                  srcset=""
+                />
+              </div>
+              <div class="episode-content"></div>
+
+              <div class="right-control">
+                <span class="add-to"><i class="fa-solid fa-plus"></i></span>
+                <span class="love"><i class="fa-solid fa-heart"></i></span>
+              </div>
+              <div class="left-control">
+                <span class="res">FHD+</span>
+                <span class="year">2020</span>
+              </div>
+
+              <div class="bottom-r-control">
+                <span class="season-con">الموسم</span>
+                <span class="season-n">1</span>
+              </div>
+              <div class="bottom-l-control">
+                <span class="episode-con">الحلقة</span>
+                <span class="episode-n">15</span>
+              </div>
+              <span class="episode-name">Solo Leveling</span>
+            </div>
+          </div>
+          <!--grid end-->
+          <!--grid start-->
+          <div class="keen-slider__slide number-slide10">
+            <div class="episode">
+              <div class="episode-img">
+                <img
+                  src="../assest\image\Solo Leveling.jpeg"
+                  alt=""
+                  srcset=""
+                />
+              </div>
+              <div class="episode-content"></div>
+
+              <div class="right-control">
+                <span class="add-to"><i class="fa-solid fa-plus"></i></span>
+                <span class="love"><i class="fa-solid fa-heart"></i></span>
+              </div>
+              <div class="left-control">
+                <span class="res">FHD+</span>
+                <span class="year">2020</span>
+              </div>
+
+              <div class="bottom-r-control">
+                <span class="season-con">الموسم</span>
+                <span class="season-n">1</span>
+              </div>
+              <div class="bottom-l-control">
+                <span class="episode-con">الحلقة</span>
+                <span class="episode-n">15</span>
+              </div>
+              <span class="episode-name">Solo Leveling</span>
+            </div>
+          </div>
+          <!--grid end-->
+        </div>
+      </div>
+    </section>
+    <!--show-section-->
+    <section class="content" id="show">
+      <div class="grid-father">
+        <div class="grid-content">
+          <sapn class="grid-text">أحدث المسرحيات</sapn>
+          <button class="more">شاهد الكل</button>
+        </div>
+        <!--slider-->
+        <div id="my-keen-slider7" class="keen-slider">
+          <!--grid start-->
+          <div class="keen-slider__slide number-slide1">
+            <div class="episode">
+              <div class="episode-img">
+                <img
+                  src="../assest\image\Solo Leveling.jpeg"
+                  alt=""
+                  srcset=""
+                />
+              </div>
+              <div class="episode-content"></div>
+
+              <div class="right-control">
+                <span class="add-to"><i class="fa-solid fa-plus"></i></span>
+                <span class="love"><i class="fa-solid fa-heart"></i></span>
+              </div>
+              <div class="left-control">
+                <span class="res">FHD+</span>
+                <span class="year">2020</span>
+              </div>
+
+              <div class="bottom-r-control">
+                <span class="season-con">الموسم</span>
+                <span class="season-n">1</span>
+              </div>
+              <div class="bottom-l-control">
+                <span class="episode-con">الحلقة</span>
+                <span class="episode-n">15</span>
+              </div>
+              <span class="episode-name">Solo Leveling</span>
+            </div>
+          </div>
+          <!--grid end-->
+          <!--grid start-->
+          <div class="keen-slider__slide number-slide2">
+            <div class="episode">
+              <div class="episode-img">
+                <img
+                  src="../assest\image\Solo Leveling.jpeg"
+                  alt=""
+                  srcset=""
+                />
+              </div>
+              <div class="episode-content"></div>
+
+              <div class="right-control">
+                <span class="add-to"><i class="fa-solid fa-plus"></i></span>
+                <span class="love"><i class="fa-solid fa-heart"></i></span>
+              </div>
+              <div class="left-control">
+                <span class="res">FHD+</span>
+                <span class="year">2020</span>
+              </div>
+
+              <div class="bottom-r-control">
+                <span class="season-con">الموسم</span>
+                <span class="season-n">1</span>
+              </div>
+              <div class="bottom-l-control">
+                <span class="episode-con">الحلقة</span>
+                <span class="episode-n">15</span>
+              </div>
+              <span class="episode-name">Solo Leveling</span>
+            </div>
+          </div>
+          <!--grid end-->
+          <!--grid start-->
+          <div class="keen-slider__slide number-slide3">
+            <div class="episode">
+              <div class="episode-img">
+                <img
+                  src="../assest\image\Solo Leveling.jpeg"
+                  alt=""
+                  srcset=""
+                />
+              </div>
+              <div class="episode-content"></div>
+
+              <div class="right-control">
+                <span class="add-to"><i class="fa-solid fa-plus"></i></span>
+                <span class="love"><i class="fa-solid fa-heart"></i></span>
+              </div>
+              <div class="left-control">
+                <span class="res">FHD+</span>
+                <span class="year">2020</span>
+              </div>
+
+              <div class="bottom-r-control">
+                <span class="season-con">الموسم</span>
+                <span class="season-n">1</span>
+              </div>
+              <div class="bottom-l-control">
+                <span class="episode-con">الحلقة</span>
+                <span class="episode-n">15</span>
+              </div>
+              <span class="episode-name">Solo Leveling</span>
+            </div>
+          </div>
+          <!--grid end-->
+          <!--grid start-->
+          <div class="keen-slider__slide number-slide4">
+            <div class="episode">
+              <div class="episode-img">
+                <img
+                  src="../assest\image\Solo Leveling.jpeg"
+                  alt=""
+                  srcset=""
+                />
+              </div>
+              <div class="episode-content"></div>
+
+              <div class="right-control">
+                <span class="add-to"><i class="fa-solid fa-plus"></i></span>
+                <span class="love"><i class="fa-solid fa-heart"></i></span>
+              </div>
+              <div class="left-control">
+                <span class="res">FHD+</span>
+                <span class="year">2020</span>
+              </div>
+
+              <div class="bottom-r-control">
+                <span class="season-con">الموسم</span>
+                <span class="season-n">1</span>
+              </div>
+              <div class="bottom-l-control">
+                <span class="episode-con">الحلقة</span>
+                <span class="episode-n">15</span>
+              </div>
+              <span class="episode-name">Solo Leveling</span>
+            </div>
+          </div>
+          <!--grid end-->
+          <!--grid start-->
+          <div class="keen-slider__slide number-slide5">
+            <div class="episode">
+              <div class="episode-img">
+                <img
+                  src="../assest\image\Solo Leveling.jpeg"
+                  alt=""
+                  srcset=""
+                />
+              </div>
+              <div class="episode-content"></div>
+
+              <div class="right-control">
+                <span class="add-to"><i class="fa-solid fa-plus"></i></span>
+                <span class="love"><i class="fa-solid fa-heart"></i></span>
+              </div>
+              <div class="left-control">
+                <span class="res">FHD+</span>
+                <span class="year">2020</span>
+              </div>
+
+              <div class="bottom-r-control">
+                <span class="season-con">الموسم</span>
+                <span class="season-n">1</span>
+              </div>
+              <div class="bottom-l-control">
+                <span class="episode-con">الحلقة</span>
+                <span class="episode-n">15</span>
+              </div>
+              <span class="episode-name">Solo Leveling</span>
+            </div>
+          </div>
+          <!--grid end-->
+          <!--grid start-->
+          <div class="keen-slider__slide number-slide6">
+            <div class="episode">
+              <div class="episode-img">
+                <img
+                  src="../assest\image\Solo Leveling.jpeg"
+                  alt=""
+                  srcset=""
+                />
+              </div>
+              <div class="episode-content"></div>
+
+              <div class="right-control">
+                <span class="add-to"><i class="fa-solid fa-plus"></i></span>
+                <span class="love"><i class="fa-solid fa-heart"></i></span>
+              </div>
+              <div class="left-control">
+                <span class="res">FHD+</span>
+                <span class="year">2020</span>
+              </div>
+
+              <div class="bottom-r-control">
+                <span class="season-con">الموسم</span>
+                <span class="season-n">1</span>
+              </div>
+              <div class="bottom-l-control">
+                <span class="episode-con">الحلقة</span>
+                <span class="episode-n">15</span>
+              </div>
+              <span class="episode-name">Solo Leveling</span>
+            </div>
+          </div>
+          <!--grid end-->
+          <!--grid start-->
+          <div class="keen-slider__slide number-slide7">
+            <div class="episode">
+              <div class="episode-img">
+                <img
+                  src="../assest\image\Solo Leveling.jpeg"
+                  alt=""
+                  srcset=""
+                />
+              </div>
+              <div class="episode-content"></div>
+
+              <div class="right-control">
+                <span class="add-to"><i class="fa-solid fa-plus"></i></span>
+                <span class="love"><i class="fa-solid fa-heart"></i></span>
+              </div>
+              <div class="left-control">
+                <span class="res">FHD+</span>
+                <span class="year">2020</span>
+              </div>
+
+              <div class="bottom-r-control">
+                <span class="season-con">الموسم</span>
+                <span class="season-n">1</span>
+              </div>
+              <div class="bottom-l-control">
+                <span class="episode-con">الحلقة</span>
+                <span class="episode-n">15</span>
+              </div>
+              <span class="episode-name">Solo Leveling</span>
+            </div>
+          </div>
+          <!--grid end-->
+          <!--grid start-->
+          <div class="keen-slider__slide number-slide8">
+            <div class="episode">
+              <div class="episode-img">
+                <img
+                  src="../assest\image\Solo Leveling.jpeg"
+                  alt=""
+                  srcset=""
+                />
+              </div>
+              <div class="episode-content"></div>
+
+              <div class="right-control">
+                <span class="add-to"><i class="fa-solid fa-plus"></i></span>
+                <span class="love"><i class="fa-solid fa-heart"></i></span>
+              </div>
+              <div class="left-control">
+                <span class="res">FHD+</span>
+                <span class="year">2020</span>
+              </div>
+
+              <div class="bottom-r-control">
+                <span class="season-con">الموسم</span>
+                <span class="season-n">1</span>
+              </div>
+              <div class="bottom-l-control">
+                <span class="episode-con">الحلقة</span>
+                <span class="episode-n">15</span>
+              </div>
+              <span class="episode-name">Solo Leveling</span>
+            </div>
+          </div>
+          <!--grid end-->
+          <!--grid start-->
+          <div class="keen-slider__slide number-slide9">
+            <div class="episode">
+              <div class="episode-img">
+                <img
+                  src="../assest\image\Solo Leveling.jpeg"
+                  alt=""
+                  srcset=""
+                />
+              </div>
+              <div class="episode-content"></div>
+
+              <div class="right-control">
+                <span class="add-to"><i class="fa-solid fa-plus"></i></span>
+                <span class="love"><i class="fa-solid fa-heart"></i></span>
+              </div>
+              <div class="left-control">
+                <span class="res">FHD+</span>
+                <span class="year">2020</span>
+              </div>
+
+              <div class="bottom-r-control">
+                <span class="season-con">الموسم</span>
+                <span class="season-n">1</span>
+              </div>
+              <div class="bottom-l-control">
+                <span class="episode-con">الحلقة</span>
+                <span class="episode-n">15</span>
+              </div>
+              <span class="episode-name">Solo Leveling</span>
+            </div>
+          </div>
+          <!--grid end-->
+          <!--grid start-->
+          <div class="keen-slider__slide number-slide10">
+            <div class="episode">
+              <div class="episode-img">
+                <img
+                  src="../assest\image\Solo Leveling.jpeg"
+                  alt=""
+                  srcset=""
+                />
+              </div>
+              <div class="episode-content"></div>
+
+              <div class="right-control">
+                <span class="add-to"><i class="fa-solid fa-plus"></i></span>
+                <span class="love"><i class="fa-solid fa-heart"></i></span>
+              </div>
+              <div class="left-control">
+                <span class="res">FHD+</span>
+                <span class="year">2020</span>
+              </div>
+
+              <div class="bottom-r-control">
+                <span class="season-con">الموسم</span>
+                <span class="season-n">1</span>
+              </div>
+              <div class="bottom-l-control">
+                <span class="episode-con">الحلقة</span>
+                <span class="episode-n">15</span>
+              </div>
+              <span class="episode-name">Solo Leveling</span>
+            </div>
+          </div>
+          <!--grid end-->
+        </div>
+      </div>
+    </section>
+ <!--folder-->
+    <span class="folder"
+      ><i
+        ><script src="https://cdn.lordicon.com/libs/mssddfmo/lord-icon-2.1.0.js"></script>
+        <lord-icon
+          src="https://cdn.lordicon.com/rjzlnunf.json"
+          trigger="loop"
+          colors="primary:#FFFFFF,secondary:#ff0088"
+          style="width: 50px; height: 50px"
+        >
+        </lord-icon></i
+    ></span>
+    <div class="overlay">
+      <span class="exit"><i class="fa-regular fa-circle-xmark fa-xl"></i></span>
+      <div class="loved-video"></div>
+    </div>
+    <!-- end of folder-->
+    <footer class="copy-right">
+      <span
+        >All Copy Right For <span class="mix">Mix</span>
+        <span class="video">video</span>
+      </span>
+    </footer>
+    <!-- Swiper JS -->
+    <script src="../assest/js/swiper-bundle.js"></script>
+    <script src="../assest/js/all.js"></script>
+    <script src="../assest/js/keen.js"></script>
+    <script src="../assest/js/main.js"></script>
+  </body>
+</html>
